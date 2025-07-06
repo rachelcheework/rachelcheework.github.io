@@ -6,4 +6,5 @@ export default defineConfig({
   plugins: [
     react(), 
   ],
+  base: "/workportfolio" //add project name here
 })
