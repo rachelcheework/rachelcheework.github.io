@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/workportfolio'>
       {/* Global Container */}
       <div className="max-w-6xl mx-auto">
         <Navbar/>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
