@@ -2,6 +2,7 @@
   "name": "fitness-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://rachelcheework.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
