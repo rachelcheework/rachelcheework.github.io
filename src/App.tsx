@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename='/workportfolio'>
+    <Router>
       {/* Global Container */}
       <div className="max-w-6xl mx-auto">
         <Navbar/>
