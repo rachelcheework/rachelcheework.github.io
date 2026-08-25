@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div className="absolute -top-10 right-10 md:hidden">
+      <div className="absolute top-10 right-10 md:hidden">
         <button
           className={`z-40 block hamburger md:hidden focus:outline-none ${isOpen ? 'open' : ''}`}
           onClick={navToggle}
