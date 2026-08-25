@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       {/* Global Container */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto overflow-x-hidden">
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
