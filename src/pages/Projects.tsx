@@ -22,15 +22,15 @@ function Projects() {
 
             {/* Card 1 */}
             <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <video autoPlay loop muted className='w-full h-auto'>
-                <source src='./fitness-website-demo.mp4' type='video/mp4'/>
-                Your browser does not support this video tag
+              <video autoPlay loop muted className="w-full h-auto">
+                <source src="./outfitbuilder-demo.mp4" type="video/mp4" />
+                Your browser does not support video tag
               </video>
-
               <div className="space-y-4 p-4">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="section-header hover:underline">fitness studio landing page</a>
-                <p>objective: familiarising with tailwind/mobile design</p>
-                <p>react, tailwind</p>
+                <a href="https://github.com/rachelcheework/outfitplanner" target="_blank" rel="noopener noreferrer" className="section-header hover:underline">outfit builder + wardrobe</a>
+                <p>objective: building an authenticated React platform for interactive outfit creation.</p>
+                <p>react, tailwind, supabase, tanstack query</p>
+                {/* <p>status: tech implementation done; pending design</p> */}
               </div>
             </div>
 
@@ -43,23 +43,10 @@ function Projects() {
               {/* Text Div */}
               <div className="space-y-4 p-4">
                 <a href='https://rachelcheework.github.io/pomodoro-timer/' target="_blank" rel="noopener noreferrer" className="section-header hover:underline">pomodoro timer</a>
-                <p>objective: familiarising with external library</p>
+                <p>objective: building customisable pomodoro timer</p>
                 <p>react, css</p>
               </div>
             </div>
-
-
-            {/* Card 3 */}
-            {/* <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <img src="./portfolio-website.png" className='' alt="" />
-
-              <div className="space-y-4 p-4">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="section-header hover:underline">this portfolio website</a>
-                <p>objective: familiarising with tailwind</p>
-                <p>react, tailwind</p>
-              </div>
-            </div> */}
-
 
           </div>
          

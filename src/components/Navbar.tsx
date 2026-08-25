@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const isActive = (path: string) =>
     {
-        return location.pathname === path ? 'bg-gray-700' : '';
+        return location.pathname === path ? 'bg-black md:bg-gray-700 text-white' : '';
     }
 
   return (
@@ -20,8 +20,6 @@ const Navbar = () => {
       <div className="hidden absolute top-5 md:flex md:flex-col p-3 space-y-2 rounded-lg border border-gray-500 text-white bg-black">
         <Link to="/" className={`nav-button ${isActive('/')}`}>about me</Link>
         <Link to="/projects" className={`nav-button ${isActive('/projects')}`}>projects</Link>
-        {/* <Link to="/posts" className={`nav-button ${isActive('/posts')}`}>posts</Link> */}
-        {/* <Link to="/resume" className={`nav-button ${isActive('/resume')}`}>resume</Link> */}
         <Link to="/connect" className={`nav-button ${isActive('/connect')}`}>connect</Link>
       </div>
 
@@ -39,12 +37,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute z-50 top-0 bottom-0 left-0 flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-md text-white bg-black ${isOpen ? 'flex' : 'hidden'}`}
+        className={`flex absolute z-50 top-0 bottom-0 left-0 flex-col self-end w-full min-h-screen py-1 pt-36 px-12 space-y-6 text-md text-gray-800 bg-white/70 backdrop-blur-xl transition-all duration-700 ease-out
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}
       >
         <Link to="/" className={`nav-button ${isActive('/')}`} onClick={navToggle}>about me</Link>
         <Link to="/projects" className={`nav-button ${isActive('/projects')}`} onClick={navToggle}>projects</Link>
-        {/* <Link to="/posts" className={`nav-button ${isActive('/posts')}`} onClick={navToggle}>posts</Link> */}
-        {/* <Link to="/resume" className={`nav-button ${isActive('/resume')}`} onClick={navToggle}>resume</Link> */}
         <Link to="/connect" className={`nav-button ${isActive('/connect')}`} onClick={navToggle}>connect</Link>
       </div>
     </nav>

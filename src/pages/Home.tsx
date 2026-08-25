@@ -37,8 +37,8 @@ function Home() {
           <div className="flex flex-col space-y-4 py-4">
               <h3 className="section-header">projects</h3>
               <ul className='section-list'>
-                <li><a href='https://rachelcheework.github.io/fitness-website/' target="_blank" rel="noopener noreferrer" className='para-link'>fitness website mockup</a></li>
-                <li><a href='https://rachelcheework.github.io/pomodoro-timer/' target="_blank" rel="noopener noreferrer" className='para-link'>pomodoro timer</a></li>
+                <li><a href='https://github.com/rachelcheework/outfitplanner' target="_blank" rel="noopener noreferrer" className='italic para-link'>outfit builder + wardrobe</a></li>
+                <li><a href='https://rachelcheework.github.io/pomodoro-timer/' target="_blank" rel="noopener noreferrer" className='italic para-link'>pomodoro timer</a></li>
               </ul>
           </div>
 
@@ -46,9 +46,9 @@ function Home() {
           <div className="flex flex-col space-y-4 py-4">
               <h3 className="section-header">say hi</h3>
               <ul className='section-list'>
-                <li><a href='mailto:rachelcheework@gmail.com?subject=Hello&body=Hi there!' className='para-link'>email</a></li>
-                <li><a href='https://www.linkedin.com/in/rachelcheework/' target="_blank" rel="noopener noreferrer" className='para-link'>linkedin</a></li>
-                <li><a href='https://github.com/rachelcheework' target="_blank" rel="noopener noreferrer" className='para-link'>github</a></li>
+                <li><a href='mailto:rachelcheework@gmail.com?subject=Hello&body=Hi there!' className='italic para-link'>email</a></li>
+                <li><a href='https://www.linkedin.com/in/rachelcheework/' target="_blank" rel="noopener noreferrer" className='italic para-link'>linkedin</a></li>
+                <li><a href='https://github.com/rachelcheework' target="_blank" rel="noopener noreferrer" className='italic para-link'>github</a></li>
               </ul>
           </div>
         </div>        

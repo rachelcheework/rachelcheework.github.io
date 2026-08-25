@@ -20,9 +20,9 @@ function Contact() {
           {/* Links Container*/}
           <div className="flex flex-col space-y-8 py-4">
             <ul className='section-list'>
-                <li><a href='mailto:rachelcheework@gmail.com?subject=Hello&body=Hi there!' className='para-link'>email</a></li>
-                <li><a href='https://www.linkedin.com/in/rachelcheework/' target="_blank" rel="noopener noreferrer" className='para-link'>linkedin</a></li>
-                <li><a href='https://github.com/rachelcheework' target="_blank" rel="noopener noreferrer" className='para-link'>github</a></li>
+                <li><a href='mailto:rachelcheework@gmail.com?subject=Hello&body=Hi there!' className='italic para-link'>email</a></li>
+                <li><a href='https://www.linkedin.com/in/rachelcheework/' target="_blank" rel="noopener noreferrer" className='italic para-link'>linkedin</a></li>
+                <li><a href='https://github.com/rachelcheework' target="_blank" rel="noopener noreferrer" className='italic para-link'>github</a></li>
             </ul>
             
           </div>
