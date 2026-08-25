@@ -22,7 +22,7 @@ function Projects() {
 
             {/* Card 1 */}
             <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <video autoPlay loop muted className="w-full h-auto">
+              <video autoPlay loop muted playsInline controls className="w-full h-auto">
                 <source src="./outfitbuilder-demo.mp4" type="video/mp4" />
                 Your browser does not support video tag
               </video>
@@ -36,7 +36,7 @@ function Projects() {
 
             {/* Card 2 */}
             <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <video autoPlay loop muted className="w-full h-auto">
+              <video autoPlay loop muted playsInline controls className="w-full h-auto">
                 <source src="./pomodoro-demo.mp4" type="video/mp4" />
                 Your browser does not support video tag
               </video>
