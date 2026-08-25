@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="relative">
       {/* Desktop Nav */}
-      <div className="hidden absolute top-5 md:flex md:flex-col p-3 space-y-2 rounded-lg border border-gray-500 text-white bg-black">
+      <div className="hidden absolute top-40 md:flex md:flex-col p-3 space-y-2 rounded-lg border border-gray-500 text-white bg-black">
         <Link to="/" className={`nav-button ${isActive('/')}`}>about me</Link>
         <Link to="/projects" className={`nav-button ${isActive('/projects')}`}>projects</Link>
         <Link to="/connect" className={`nav-button ${isActive('/connect')}`}>connect</Link>
