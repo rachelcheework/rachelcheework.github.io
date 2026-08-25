@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav>
+    <nav className='relative'>
       {/* Desktop Nav */}
       <div className="hidden fixed top-40 md:flex md:flex-col p-3 space-y-2 rounded-lg border border-gray-500 text-white bg-black">
         <Link to="/" className={`nav-button ${isActive('/')}`}>about me</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div className="fixed top-10 right-10 z-50 md:hidden">
+      <div className="absolute top-10 right-10 z-50 md:hidden">
         <button
           className={`z-50 block hamburger md:hidden focus:outline-none ${isOpen ? 'open' : ''}`}
           onClick={navToggle}
