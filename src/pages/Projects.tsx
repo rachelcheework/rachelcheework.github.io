@@ -1,13 +1,35 @@
 import '../index.css';
+import ProjectCard, { type ProjectCardProps } from '../components/ProjectCard';
 
 function Projects() {
-
+  const projList: ProjectCardProps[] = [
+    {
+      vidSrc: "./outfitbuilder-demo.mp4",
+      projName: "outfit builder + wardrobe",
+      projectLink: "https://outfitplanner-two.vercel.app/",
+      projectDesc: "building an authenticated React platform for interactive outfit creation.",
+      techStack: "react, tailwind, supabase, tanstack query",
+    },
+    {
+      vidSrc: "./cryptoticker-demo.mp4",
+      projName: "crypto price ticker + dummy trade mechanism",
+      projectLink: "https://price-ticker-three.vercel.app/",
+      projectDesc: "aggregates data, handles high-frequency price updates, and batch UI updates",
+      techStack: "react, typescript, zustand, websockets",
+    }, {
+      vidSrc: "./pomodoro-demo.mp4",
+      projName: "pomodoro timer",
+      projectLink: "https://rachelcheework.github.io/pomodoro-timer/",
+      projectDesc: "building customisable pomodoro timer",
+      techStack: "react, css",
+    },
+  ]
 
   return (
     <div className="main">
       {/* Projects */}
       <section id="projects">
-        
+
         {/* Projects Container */}
         <div className="flex flex-col px-6 md:mx-72 my-20 divide-y divide-gray-500">
 
@@ -19,38 +41,16 @@ function Projects() {
 
           {/* Cards Container*/}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-6 py-4">
-
-            {/* Card 1 */}
-            <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <video autoPlay loop muted playsInline controls className="w-full h-auto">
-                <source src="./outfitbuilder-demo.mp4" type="video/mp4" />
-                Your browser does not support video tag
-              </video>
-              <div className="space-y-4 p-4">
-                <a href="https://github.com/rachelcheework/outfitplanner" target="_blank" rel="noopener noreferrer" className="section-header hover:underline">outfit builder + wardrobe</a>
-                <p>objective: building an authenticated React platform for interactive outfit creation.</p>
-                <p>react, tailwind, supabase, tanstack query</p>
-                {/* <p>status: tech implementation done; pending design</p> */}
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="border border-gray-500 rounded-2xl overflow-hidden md:col-span-2">
-              <video autoPlay loop muted playsInline controls className="w-full h-auto">
-                <source src="./pomodoro-demo.mp4" type="video/mp4" />
-                Your browser does not support video tag
-              </video>
-              {/* Text Div */}
-              <div className="space-y-4 p-4">
-                <a href='https://rachelcheework.github.io/pomodoro-timer/' target="_blank" rel="noopener noreferrer" className="section-header hover:underline">pomodoro timer</a>
-                <p>objective: building customisable pomodoro timer</p>
-                <p>react, css</p>
-              </div>
-            </div>
+            {projList.map((project) => (
+              <ProjectCard
+                key={project.projName}
+                {...project}
+              />
+            ))}
 
           </div>
-         
-        </div>        
+
+        </div>
       </section>
     </div>
   );
