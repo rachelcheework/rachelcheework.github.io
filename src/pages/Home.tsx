@@ -37,7 +37,8 @@ function Home() {
           <div className="flex flex-col space-y-4 py-4">
               <h3 className="section-header">projects</h3>
               <ul className='section-list'>
-                <li><a href='https://github.com/rachelcheework/outfitplanner' target="_blank" rel="noopener noreferrer" className='italic para-link'>outfit builder + wardrobe</a></li>
+                <li><a href='https://outfitplanner-two.vercel.app/' target="_blank" rel="noopener noreferrer" className='italic para-link'>outfit builder + wardrobe</a></li>
+                <li><a href='https://price-ticker-three.vercel.app/' target="_blank" rel="noopener noreferrer" className='italic para-link'>crypto price ticker + dummy trade mechanism</a></li>
                 <li><a href='https://rachelcheework.github.io/pomodoro-timer/' target="_blank" rel="noopener noreferrer" className='italic para-link'>pomodoro timer</a></li>
               </ul>
           </div>
